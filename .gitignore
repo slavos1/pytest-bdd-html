@@ -127,3 +127,9 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+_results/
+.vscode/
+_results
+pyproject.toml.two
+*.py_
+test_report.html

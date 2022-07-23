@@ -1,7 +1,0 @@
-= pytest-bdd-html
-:icons: font
-:toc: left
-
-A `pytest` plugin to display https://en.wikipedia.org/wiki/Behavior-driven_development[BDD] info in the HTML test report.
-
-Depends on `pytest-bdd` and `pytest-html`.

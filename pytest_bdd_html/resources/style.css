@@ -1,0 +1,31 @@
+#results-table {
+    width: 100%;
+}
+
+.col-description h3 {
+    margin: 0 0 .2em;
+    color: indigo;
+}
+
+.col-description .step > .step-name {
+    color: goldenrod;
+    font-weight: bold;
+    margin-right: .5em;
+}
+
+.col-description .step {
+    margin-bottom: .3em;
+}
+
+.col-description .text {
+    margin-bottom: 1.5em;
+}
+
+.col-description .func-doc {
+    white-space: pre-wrap;
+    margin: 0;
+}
+
+.col-description .step-is-and {
+    margin-left: 1em;
+}
