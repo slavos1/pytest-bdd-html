@@ -5,7 +5,7 @@ requires = [
 ]
 
 [project]
-version = "0.1.6rc0"
+version = "0.1.7rc0"
 # package_data={"pytest_bdd_html": ["resources/*"]}
 # entry_points={"pytest11": ["bdd-html = pytest_bdd_html.plugin"]}
 # use_scm_version=True
@@ -57,7 +57,7 @@ version = {attr = "pytest_bdd_html.version"}
 [tool.bumpver]
 commit = true
 commit_message = "bump version {old_version} -> {new_version}"
-current_version = "0.1.6rc0"
+current_version = "0.1.7rc0"
 push = false
 tag = true
 version_pattern = "MAJOR.MINOR.PATCH[PYTAGNUM]"
