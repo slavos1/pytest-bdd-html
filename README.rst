@@ -1,7 +1,7 @@
 pytest-bdd-html
 ===============
 
-**Version**: 0.1.7rc0
+**Version**: 0.1.8a0
 
 A ``pytest`` plugin to display `BDD <https://en.wikipedia.org/wiki/Behavior-driven_development>`_ info in the ``pytest-html``-generated HTML test report.
 
