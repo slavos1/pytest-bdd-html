@@ -1,32 +1,29 @@
 [build-system]
 build-backend = "setuptools.build_meta"
 requires = [
-  "setuptools==63.0.0b1", # XXX must pin to exactly this  # "setuptools==63.0.0",  # "setuptools_scm[toml]>=6.2",  # "setuptools-scm",
+  # XXX must pin to exactly this to be able to do pip install -e .
+  "setuptools==63.0.0b1",
 ]
 
 [project]
+author = {name = "slavos1", email = "slavos1@localhost"}
 version = "0.1.7rc0"
-# package_data={"pytest_bdd_html": ["resources/*"]}
-# entry_points={"pytest11": ["bdd-html = pytest_bdd_html.plugin"]}
-# use_scm_version=True
-# long_description = open("README.adoc").read()
 # https://pythonhosted.org/an_example_pypi_project/setuptools.html#classifiers
-# author = {name = "slavos1", email = "slavos1@localhost"}
-# classifiers = [
-#   "Development Status :: 2 - Pre-Alpha",
-#   "Framework :: Pytest",
-#   "Intended Audience :: Developers",
-#   "License :: OSI Approved :: MIT License",
-#   "Topic :: Software Development :: Quality Assurance",
-#   "Topic :: Software Development :: Testing",
-#   "Topic :: Utilities",
-#   "Programming Language :: Python",
-#   "Programming Language :: Python :: 3",
-#   "Programming Language :: Python :: 3.7",
-#   "Programming Language :: Python :: 3.8",
-#   "Programming Language :: Python :: 3.9",
-#   "Programming Language :: Python :: 3 :: Only",
-# ]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Framework :: Pytest",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: MIT License",
+  "Topic :: Software Development :: Quality Assurance",
+  "Topic :: Software Development :: Testing",
+  "Topic :: Utilities",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.7",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3 :: Only",
+]
 dependencies = [
   "pytest>=5.0,!=6.0.0",
   "pytest-metadata",
@@ -34,25 +31,18 @@ dependencies = [
   "pytest-html",
 ]
 description = "pytest plugin to display BDD info in HTML test report"
-# dynamic = ["version"]
 keywords = ["pytest", "html", "bdd", "report"]
 license = {text = "MIT"}
 name = "pytest-bdd-html"
 readme = "README.rst"
 requires-python = ">=3.7"
-urls = {Homepage = "https://github.com/slavos1/pytest-bdd-html", Documentation = "https://github.com/slavos1/pytest-bdd-html/blob/main/README.adoc"}
+urls = {Homepage = "https://github.com/slavos1/pytest-bdd-html"}
 
 [project.entry-points."pytest11"]
 bdd-html = "pytest_bdd_html.plugin"
 
 [tool.setuptools]
 packages = ["pytest_bdd_html"]
-
-[tool.setuptools.dynamic]
-version = {attr = "pytest_bdd_html.version"}
-
-# [tool.setuptools_scm]
-# write_to = "pytest_bdd_html/__version.py"
 
 [tool.bumpver]
 commit = true
@@ -63,8 +53,7 @@ tag = true
 version_pattern = "MAJOR.MINOR.PATCH[PYTAGNUM]"
 
 [tool.bumpver.file_patterns]
-"README.rst" = [
-  "{version}", # "{pep440_version}",
-]
-"pyproject.toml" = ['current_version = "{version}"', 'version = "{version}"'] #, 'version = "{version}"']
+"README.rst" = [ "{version}" ]
+"pyproject.toml" = ['current_version = "{version}"', 'version = "{version}"']
 "pytest_bdd_html/__init__.py" = ["{version}"]
+

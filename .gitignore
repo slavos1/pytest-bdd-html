@@ -133,3 +133,4 @@ _results
 pyproject.toml.two
 *.py_
 test_report.html
+_coverage
