@@ -3,7 +3,10 @@ pytest-bdd-html
 
 .. image:: https://img.shields.io/github/release/slavos1/pytest-bdd-html?include_prereleases=&sort=semver&color=blue
     :target: https://github.com/slavos1/pytest-bdd-html/releases/
-    :alt: GitHub release   
+    :alt: GitHub release
+.. image:: https://img.shields.io/badge/dynamic/json?url=https://pypi.org/pypi/pytest-bdd-html/json/&label=pypi&query=$.info.version&color=blue
+    :target: https://pypi.org/project/pytest-bdd-html/#history
+    :alt: PyPI release
 .. .. image:: https://github.com/slavos1/pytest-bdd-html/workflows/gh/badge.svg
 ..   :target: https://github.com/slavos1/pytest-bdd-html/actions
 ..   :alt: CI
@@ -48,7 +51,7 @@ Available command line options are as follows.
 
 ``--bdd-html-css=PATH``
     Specifies a path to a custom CSS file for styling of the Description column. ``pytest_bdd_html/resources/style.css`` is used by default if ``PATH`` does not exist or is not specified. See `CSS classes`_ for how the column cells are structured.
-  
+
 CSS classes
 -----------
 
