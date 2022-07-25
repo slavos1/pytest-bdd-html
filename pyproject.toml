@@ -55,6 +55,5 @@ tag = true
 version_pattern = "MAJOR.MINOR.PATCH[PYTAGNUM]"
 
 [tool.bumpver.file_patterns]
-"README.rst" = ["{version}"]
 "pyproject.toml" = ['current_version = "{version}"', 'version = "{version}"']
 "pytest_bdd_html/__init__.py" = ["{version}"]
