@@ -1,6 +1,10 @@
 pytest-bdd-html
 ===============
 
+[![GitHub release](https://img.shields.io/github/release/slavos1/pytest-bdd-html?include_prereleases=&sort=semver&color=blue)](https://github.com/slavos1/pytest-bdd-html/releases/)
+[![License](https://img.shields.io/badge/License-MIT-blue)](#license)
+[![issues - pytest-bdd-html](https://img.shields.io/github/issues/slavos1/pytest-bdd-html)](https://github.com/slavos1/pytest-bdd-html/issues)
+
 **Version**: 0.1.10a0
 
 A ``pytest`` plugin to display `BDD <https://en.wikipedia.org/wiki/Behavior-driven_development>`_ info in the `pytest-html <https://pypi.org/project/pytest-html/>`_-generated HTML test report.
