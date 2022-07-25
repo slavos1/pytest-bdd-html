@@ -55,3 +55,9 @@ mypy:
 bump-patch:
 	bumpver update --patch --tag alpha --dry
 
+doc: README.html
+
+README.html: README.rst
+	pandoc -w asciidoc -o >( sed '2s/^/:toc: left\n:source-highlighter: pygments\n/; s/^=//; s/,sourceCode,/,/' > $<.adoc ) $<
+	asciidoctor -o $@ $<.adoc
+	rm -f $<.adoc

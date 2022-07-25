@@ -38,7 +38,7 @@ license = {text = "MIT"}
 name = "pytest-bdd-html"
 readme = "README.rst"
 requires-python = ">=3.7"
-urls = {Homepage = "https://github.com/slavos1/pytest-bdd-html"}
+urls = {Homepage = "https://github.com/slavos1/pytest-bdd-html", Documentation = "https://github.com/slavos1/pytest-bdd-html/blob/main/README.rst"}
 
 [project.entry-points."pytest11"]
 bdd-html = "pytest_bdd_html.plugin"

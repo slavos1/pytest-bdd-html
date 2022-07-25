@@ -134,3 +134,5 @@ pyproject.toml.two
 *.py_
 test_report.html
 _coverage
+README.rst.adoc
+README.html
