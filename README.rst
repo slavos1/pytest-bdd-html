@@ -4,12 +4,6 @@ pytest-bdd-html
 .. image:: https://img.shields.io/badge/dynamic/xml?url=https://pypi.org/rss/project/pytest-bdd-html/releases.xml&label=pypi&query=//item[1]/title&color=blue
     :target: https://pypi.org/project/pytest-bdd-html/#history
     :alt: PyPI release
-.. image:: https://img.shields.io/github/release/slavos1/pytest-bdd-html?include_prereleases=&sort=semver&color=9cf
-    :target: https://github.com/slavos1/pytest-bdd-html/releases/
-    :alt: GitHub release
-.. .. image:: https://github.com/slavos1/pytest-bdd-html/workflows/gh/badge.svg
-..   :target: https://github.com/slavos1/pytest-bdd-html/actions
-..   :alt: CI
 .. image:: https://img.shields.io/github/issues/slavos1/pytest-bdd-html
    :target: https://github.com/slavos1/pytest-bdd-html/issues
    :alt: Issues
