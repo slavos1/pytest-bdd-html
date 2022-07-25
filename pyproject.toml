@@ -6,7 +6,9 @@ requires = [
 ]
 
 [project]
-author = {name = "slavos1", email = "slavos1@localhost"}
+authors = [
+  {name = "slavos1", email = "slavos1@example.com"},
+]
 version = "0.1.8a0"
 # https://pythonhosted.org/an_example_pypi_project/setuptools.html#classifiers
 classifiers = [
@@ -53,7 +55,6 @@ tag = true
 version_pattern = "MAJOR.MINOR.PATCH[PYTAGNUM]"
 
 [tool.bumpver.file_patterns]
-"README.rst" = [ "{version}" ]
+"README.rst" = ["{version}"]
 "pyproject.toml" = ['current_version = "{version}"', 'version = "{version}"']
 "pytest_bdd_html/__init__.py" = ["{version}"]
-
