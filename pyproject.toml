@@ -9,7 +9,7 @@ requires = [
 authors = [
   {name = "slavos1", email = "slavos1@example.com"},
 ]
-version = "0.1.11a0"
+version = "0.1.12a0"
 # https://pythonhosted.org/an_example_pypi_project/setuptools.html#classifiers
 classifiers = [
   "Development Status :: 3 - Alpha",
@@ -49,7 +49,7 @@ packages = ["pytest_bdd_html"]
 [tool.bumpver]
 commit = true
 commit_message = "bump version {old_version} -> {new_version}"
-current_version = "0.1.11a0"
+current_version = "0.1.12a0"
 push = false
 tag = true
 version_pattern = "MAJOR.MINOR.PATCH[PYTAGNUM]"

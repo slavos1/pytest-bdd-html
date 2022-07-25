@@ -1,2 +1,2 @@
 # pylint:disable=missing-module-docstring
-VERSION = "0.1.11a0"
+VERSION = "0.1.12a0"
