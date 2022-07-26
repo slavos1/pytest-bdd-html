@@ -16,7 +16,7 @@ permissions:
 jobs:
   build:
 
-    runs-on: debian-latest
+    runs-on: ubuntu-latest
     strategy:
       matrix:
         python: ["3.7", "3.8", "3.9", "3.10"]
