@@ -1,0 +1,3 @@
+= Contributing
+
+Rules for contributing the code.
