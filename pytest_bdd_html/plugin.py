@@ -76,7 +76,7 @@ def pytest_runtest_makereport(item, call):  # pylint:disable=unused-argument
     outcome = yield
     report = outcome.get_result()
     meta = dict(item.user_properties)
-    fonc_doc = item.function.__doc__
+    func_doc = item.function.__doc__
     if func_doc:
         func_doc = func_doc.splitlines()[0]
     report.description = dict(doc=func_doc or NO_DESCRIPTION)
