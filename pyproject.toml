@@ -5,6 +5,9 @@ requires = [
   "setuptools==63.0.0b1",
 ]
 
+[tool.setuptools.package-data]
+pytest_bdd_html = ["*.csv"]
+
 [project]
 authors = [
   {name = "slavos1", email = "slavos1@example.com"},
