@@ -2,16 +2,11 @@
 build-backend = "setuptools.build_meta"
 requires = [
   # XXX must pin to exactly this to be able to do pip install -e .
-  "setuptools==63.0.0b1",
+  "setuptools==65.5.1",
 ]
-
-[tool.setuptools.package-data]
-pytest_bdd_html = ["*.csv"]
 
 [project]
-authors = [
-  {name = "slavos1", email = "slavos1@example.com"},
-]
+authors = [{ name = "slavos1", email = "slavos1@example.com" }]
 version = "0.1.13a0"
 # https://pythonhosted.org/an_example_pypi_project/setuptools.html#classifiers
 classifiers = [
@@ -37,17 +32,21 @@ dependencies = [
 ]
 description = "pytest plugin to display BDD info in HTML test report"
 keywords = ["pytest", "html", "bdd", "report"]
-license = {text = "MIT"}
+license = { text = "MIT" }
 name = "pytest-bdd-html"
 readme = "README.rst"
 requires-python = ">=3.7"
-urls = {Homepage = "https://github.com/slavos1/pytest-bdd-html", Documentation = "https://github.com/slavos1/pytest-bdd-html/blob/main/README.rst"}
+urls = { Homepage = "https://github.com/slavos1/pytest-bdd-html", Documentation = "https://github.com/slavos1/pytest-bdd-html/blob/main/README.rst" }
 
 [project.entry-points."pytest11"]
 bdd-html = "pytest_bdd_html.plugin"
 
 [tool.setuptools]
+include-package-data = true
 packages = ["pytest_bdd_html"]
+
+[tool.setuptools.package-data]
+pytest_bdd_html = ["**/*.css"]
 
 [tool.bumpver]
 commit = true
