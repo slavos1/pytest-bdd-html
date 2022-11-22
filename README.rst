@@ -94,3 +94,12 @@ Structure of cell for non-BDD test *without* functional comment
   .col-description
     .col-description-no-doc /* an empty div */
 
+Version update
+--------------
+
+::
+
+  bumpver test -p 0.1.13a0 "MAJOR.MINOR.PATCH[PYTAGNUM]"
+  bumpver update -n -d -p
+  bumpver update -n -p
+
