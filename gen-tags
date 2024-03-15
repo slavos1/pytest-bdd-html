@@ -1,0 +1,5 @@
+#!/bin/bash
+
+git for-each-ref --color=never --sort=-creatordate --format '
+== {diff}TODO..%(refname:short)[%(refname:short)] -- %(creatordate:short)
+' refs/tags
