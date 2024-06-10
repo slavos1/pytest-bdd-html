@@ -34,9 +34,9 @@ Types of changes
 
 Addressing the issue backlog, planned in the milestones without a fixed date:
 
-* link:milestone/1[0.2.0]
-* link:milestone/2[0.2.1]
-* link:milestone/3[0.2.2]
+* link:{repo}/milestone/1[0.2.0]
+* link:{repo}/milestone/2[0.2.1]
+* link:{repo}/milestone/3[0.2.2]
 
 == {diff}0.1.13a0..0.1.14a0[0.1.14a0] -- 2022-11-22
 
