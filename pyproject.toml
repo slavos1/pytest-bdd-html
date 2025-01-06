@@ -2,7 +2,7 @@
 build-backend = "setuptools.build_meta"
 requires = [
   # XXX must pin to exactly this to be able to do pip install -e .
-  "setuptools==65.5.1",
+  "setuptools==75.7.0",
 ]
 
 [project]
